@@ -4,9 +4,9 @@ function oneClickGetPopupHtml(extension) {
     extension = _extension
   }
 
-  //   mail = `1click-short-link@1ce.org`,
-  //   	rateLink = `https://chrome.google.com/webstore/detail/kgibihelffacdmhkffbmnbhgnmmdcdke/reviews`,
-  // 	  githubLink = `https://github.com/1click-extensions/1click-short-link`;
+  //   mail = `1click-bitcoin-balance@1ce.org`,
+  //   	rateLink = `https://chrome.google.com/webstore/detail/doooieacajknakjmppclchjaelhdkbbg/reviews`,
+  // 	  githubLink = `https://github.com/1click-extensions/1click-bitcoin-balance`;
   // 	console.log(extension);
   return (str = `
   <style>
@@ -112,14 +112,14 @@ button.btn-popup.no-thanks {
 
 		<div class="please-rate-text">
 			To advance the open-source world, and to give us motivation, 
-			If you like 1Click short link <br/><a target=_blank href="https://chrome.google.com/webstore/detail/kgibihelffacdmhkffbmnbhgnmmdcdke/reviews" >please give us 5-stars</a>
+			If you like 1Click Bitcoin Balance <br/><a target=_blank href="https://chrome.google.com/webstore/detail/doooieacajknakjmppclchjaelhdkbbg/reviews" >please give us 5-stars</a>
 			<br/>
 			<div class="addition">
-				In addition, If you want to report a bug, or you have a recommendation, please <a href="https://github.com/1click-extensions/1click-short-link/issues/new">report a public issue</a> or  <a href="mailto:1click-short-link@1ce.org">Contact us</a>
+				In addition, If you want to report a bug, or you have a recommendation, please <a href="https://github.com/1click-extensions/1click-bitcoin-balance/issues/new">report a public issue</a> or  <a href="mailto:1click-bitcoin-balance@1ce.org">Contact us</a>
 			</div>
 			<div class="skip-wrp"><button type="button" class="btn-popup no-thanks ">Skip</button></div>
 		</div>
-		<a class="please-rate-github" href="https://github.com/1click-extensions/1click-short-link">Fork on github</a>
+		<a class="please-rate-github" href="https://github.com/1click-extensions/1click-bitcoin-balance">Fork on github</a>
 	</div>
 	`)
 }
