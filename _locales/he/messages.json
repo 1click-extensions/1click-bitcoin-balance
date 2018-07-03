@@ -5,6 +5,6 @@
   "error": {"message": "סליחה, משהו לא עובד" },
   "please_wait": {"message": "אנא המתן" },
   "browser_action": {"message": "בדוק יתרת ביטקוין" },
-  "ext_desc": {"message": "הכנס מזהה רנק ומצא את היתרה שלו" },
+  "ext_desc": {"message": "הכנס מזהה ארנק ביטקוין ומצא את היתרה שלו" },
   "ext_name": {"message": "יתרת ביטקוין בלחיצה אחת" }
 }
