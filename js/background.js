@@ -12,7 +12,7 @@ chrome.runtime.onMessage.addListener(
     //console.log(request,sender);
     switch(request.action){
       case 'checkBalance':
-        aja().url('https://utils.1ce.org/check-balance?type=bitcoin&hash=' + request.hash)
+        aja().url('https://utils.1ce.org/check-balance?type=' + request.coin + '&hash=' + request.hash)
         .timeout(10000)  
         .on('200', function(data){
             if(!data.status){
