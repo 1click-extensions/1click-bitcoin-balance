@@ -12,14 +12,15 @@ chrome.runtime.onMessage.addListener(
     //console.log(request,sender);
     switch(request.action){
       case 'checkBalance':
-        aja().url('https://utils.1ce.org/check-balance?type=' + request.coin + '&hash=' + request.hash)
+        //aja().url('https://utils.1ce.org/check-balance?type=' + request.coin + '&hash=' + request.hash)
+        aja().url('http://127.0.0.1:2632/check-balance?type=' + request.coin + '&hash=' + request.hash)
         .timeout(10000)  
         .on('200', function(data){
             if(!data.status){
               sendResponse({status:false});
             }
             else{
-              sendResponse({status:true,balance:data.balance});
+              sendResponse(data);
             }
               console.log(data);
               //well done

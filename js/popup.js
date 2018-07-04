@@ -3,7 +3,7 @@ var query = { active: true, currentWindow: true };
 for(let coin of coins){
     var coinVal = localStorage.getItem('coin-' + coin),
         title = chrome.i18n.getMessage("insert_wallet", [coin]),
-        edit = chrome.i18n.getMessage("edit_coin", [coin]),
+        edit = chrome.i18n.getMessage("edit"),
         check = chrome.i18n.getMessage("submit");
         console.log(coinVal,coin)
     let html = `
@@ -59,7 +59,7 @@ function callCheck(wrp, coin, coinVal){
         if(ans.status && ans.balance){
             switchToShow(wrp);
             wrp.find('.message').text(chrome.i18n.getMessage("balance",[capitalizeFirstLetter(coin)])+ ':');
-            wrp.find('.balance').text(ans.balance);
+            wrp.find('.balance').text(ans.balance + ' ' + ans.USD);
             wrp.find('.balance, .edit').removeClass('hidden');
             setTimeout(function(){
                 chrome.runtime.sendMessage({action: "injectJs"});
